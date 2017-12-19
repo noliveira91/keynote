@@ -6,25 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_editar extends AppCompatActivity {
 
-    protected Button btncriarnovo;
-    protected Button btncriarnovo2;
+    protected Button btnguardar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_editar);
 
-        btncriarnovo = (Button) findViewById(R.id.criarnovo);
-        btncriarnovo.setOnClickListener(new View.OnClickListener() {
+        btnguardar = (Button) findViewById(R.id.guardar);
+        btnguardar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Intent i=new Intent (MainActivity.this,MainActivity_criarnovo.class);
+                Intent i=new Intent (MainActivity_editar.this,MainActivity_consultar.class);
                 startActivity (i);
             }
         });
 
+
+
     }
 }
-

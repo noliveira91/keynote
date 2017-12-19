@@ -6,25 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_criarnovo extends AppCompatActivity {
 
-    protected Button btncriarnovo;
-    protected Button btncriarnovo2;
+    protected Button btncriar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_criarnovo);
 
-        btncriarnovo = (Button) findViewById(R.id.criarnovo);
-        btncriarnovo.setOnClickListener(new View.OnClickListener() {
+        btncriar = (Button) findViewById(R.id.criar);
+        btncriar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Intent i=new Intent (MainActivity.this,MainActivity_criarnovo.class);
+                Intent i=new Intent (MainActivity_criarnovo.this,MainActivity.class);
                 startActivity (i);
             }
         });
 
+
     }
 }
-

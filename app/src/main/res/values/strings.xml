@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">keynote</string>
+    <string name="powered_by_nuno_oliveira">powered by Nuno Oliveira</string>
+    <string name="criar_novo_keynote">Criar Novo keyNOTE</string>
 </resources>

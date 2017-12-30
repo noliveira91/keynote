@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context="com.example.nunooliveira.keynote.MainActivity_editar">
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/nomeaplicacao"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -17,14 +18,16 @@
         android:ems="10"
         android:hint="Nome Aplicação"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/utilizador"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -34,14 +37,16 @@
         android:ems="10"
         android:hint="Utilizador"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.14999998" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -51,14 +56,16 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39999998" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -68,11 +75,13 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/guardar"
@@ -82,12 +91,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="?android:attr/colorActivatedHighlight"
         android:text="Guardar"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.6" />
 
 
 

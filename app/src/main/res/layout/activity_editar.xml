@@ -7,7 +7,7 @@
     android:background="@android:color/darker_gray"
     tools:context="com.example.nunooliveira.keynote.MainActivity_editar">
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/nomeaplicacao"
         android:layout_width="300dp"
         android:layout_height="60dp"

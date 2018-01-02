@@ -78,5 +78,13 @@ public class MainActivity_criarnovo extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent=new Intent (MainActivity_criarnovo.this,MainActivity.class);
+        startActivity (intent);
+        finish();
+        super.onBackPressed();
+    }
 }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@color/colorFundo"
     tools:context="com.example.nunooliveira.keynote.MainActivity_editar">
 
     <AutoCompleteTextView
@@ -20,6 +20,7 @@
         android:inputType="textPersonName"
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
         android:inputType="textPersonName"
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +60,7 @@
         android:inputType="textEmailAddress"
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +80,7 @@
         android:inputType="textPersonName"
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,14 +97,31 @@
         android:layout_marginTop="8dp"
         android:background="?android:attr/colorActivatedHighlight"
         android:text="Guardar"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.9" />
 
+    <!--android:drawableStart="@drawable/guardar"
+    android:paddingStart="125dp"-->
 
+    <TextView
+        android:id="@+id/powered2"
+        android:layout_width="232dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/powered_by_nuno_oliveira"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>

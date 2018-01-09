@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimary">#666666</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#f17a0a</color>
+    <color name="colorAccent">#3f51b5</color>
+    <color name="colorAZUL">#009fc4</color>
+    <color name="colorAzulLogotipo">#00acc8</color>
+    <color name="colorCinzaEscuro">#666666</color>
     <color name="colorFundo">#dcdcdc</color>
-    <color name="colorBotao">#f17a0a</color>
 
 
 </resources>

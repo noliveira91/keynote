@@ -7,6 +7,23 @@
     android:background="@color/colorFundo"
     tools:context="com.example.nunooliveira.keynote.MainActivity_editar">
 
+    <TextView
+        android:id="@+id/logotipo2"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAzulLogotipo"
+        android:drawableStart="@drawable/logo2"
+        android:paddingStart="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <AutoCompleteTextView
         android:id="@+id/nomeaplicacao"
         android:layout_width="300dp"
@@ -18,14 +35,15 @@
         android:ems="10"
         android:hint="Nome Aplicação"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
-        android:textColorLink="@android:color/black"
+        android:textColorLink="@color/colorAZUL"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.14999998" />
 
     <EditText
         android:id="@+id/utilizador"
@@ -38,14 +56,15 @@
         android:ems="10"
         android:hint="Utilizador"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
-        android:textColorLink="@android:color/black"
+        android:textColorLink="@color/colorAZUL"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14999998" />
+        app:layout_constraintVertical_bias="0.26999998" />
 
     <EditText
         android:id="@+id/email"
@@ -58,15 +77,17 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
-        android:textColorLink="@android:color/black"
+        android:textColorLink="@color/colorAZUL"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.425" />
 
+    <!--BOTÃO GUARDAR-->
     <EditText
         android:id="@+id/password"
         android:layout_width="300dp"
@@ -78,14 +99,15 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
-        android:textColorLink="@android:color/black"
+        android:textColorLink="@color/colorAZUL"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
         android:id="@+id/guardar"
@@ -95,7 +117,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:background="@color/colorCinzaEscuro"
+        android:textColor="@color/colorAZUL"
         android:text="Guardar"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,11 +127,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 
-    <!--android:drawableStart="@drawable/guardar"
-    android:paddingStart="125dp"-->
-
     <TextView
-        android:id="@+id/powered2"
+        android:id="@+id/powered"
         android:layout_width="232dp"
         android:layout_height="41dp"
         android:layout_marginBottom="8dp"

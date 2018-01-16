@@ -103,4 +103,47 @@ public class MainActivity_editar extends AppCompatActivity {
         finish();
         super.onBackPressed();
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outputState) {
+        String s = nomeaplicacao.getText().toString();
+        if (!s.equals("")) {
+            outputState.putString("nomeaplicacao", s);
+        }
+
+        s = utilizador.getText().toString();
+        if (!s.equals("")) {
+            outputState.putString("utilizador", s);
+        }
+
+        s = email.getText().toString();
+        if (!s.equals("")) {
+            outputState.putString("email", s);
+        }
+
+        s = password.getText().toString();
+        if (!s.equals("")) {
+            outputState.putString("password", s);
+        }
+
+        super.onSaveInstanceState(outputState);
+    }
+
+    protected void restoreVarsFromBundle(Bundle savedInstanceState) {
+        String str = savedInstanceState.getString("nomeaplicacao");
+        if (!str.equals(""))
+            nomeaplicacao.setText("" + str);
+
+        str = savedInstanceState.getString("utilizador");
+        if (!str.equals(""))
+            utilizador.setText("" + str);
+
+        str = savedInstanceState.getString("email");
+        if (!str.equals(""))
+            email.setText("" + str);
+
+        str = savedInstanceState.getString("password");
+        if (!str.equals(""))
+            password.setText("" + str);
+    }
 }

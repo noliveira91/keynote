@@ -21,7 +21,7 @@ public class MainActivity_consultar extends AppCompatActivity {
     protected AdaptadorBaseDados adb;
     protected Cursor cursor;
     protected Intent intent;
-    protected int _id;
+    protected Integer _id;
 
     @Override
     protected void onStart() {
@@ -93,5 +93,19 @@ public class MainActivity_consultar extends AppCompatActivity {
         startActivity (intent);
         finish();
         super.onBackPressed();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outputState) {
+        if (_id!=null) {
+            outputState.putInt("_id", _id);
+        }
+        super.onSaveInstanceState(outputState);
+    }
+
+    protected void restoreVarsFromBundle(Bundle savedInstanceState) {
+        Integer index = savedInstanceState.getInt("_id");
+        if (index != 0)
+            _id=index;
     }
 }
